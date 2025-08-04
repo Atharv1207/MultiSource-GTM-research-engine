@@ -117,8 +117,7 @@ Criteria might include:
 4. Produces a final sorted output.
 
 <h3>How the End-to-End Flow Works</h3>
-1. Request Received: A client sends a research request via research_route.py.
-
+1. Request Received: A client sends a research request via research_route.py.\
 2. Controller Invoked: data_pipeline_controller.py takes the request and initializes:
    1. Query generation (query_generator.py).
    2. Query strategy selection (query_strategy.py).
