@@ -4,6 +4,15 @@
 This project implements a robust data pipeline for parallel retrieval, deduplication, and ranking of research data across multiple sources (job boards, news sites, search engines). The pipeline uses asynchronous fetching, query strategy management, and  scoring integration points for reliability.
 </h4>
 
+<h3> Assumptions</h3>
+
+- For every query, searching 50+ sources might not be ideal specially at scale
+- Caching of data should be valid for less time as we are focused on realtime
+  - Or we can cache the html DOM
+- For 50+ sources, maintaining 50+ agents might not be the best approach given the dynamic structure of the webpages
+
+
+
 
 <h3>Project Overview</h3>
 The system consists of the following key components:
@@ -147,3 +156,6 @@ Future Improvements:
 - Implement caching of fetched results.
 - Support more search engines (Google, DuckDuckGo).
 - Integrate vector-based similarity scoring.
+- Add support for context window so LLM has context of previous responses.
+- Add ML based query strategy 
+- Improve query strategy based on historical performance, heuristics, or scoring
