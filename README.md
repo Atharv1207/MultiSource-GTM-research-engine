@@ -118,9 +118,11 @@ Criteria might include:
 
 <h3>How the End-to-End Flow Works</h3>
 1. Request Received: A client sends a research request via research_route.py.
+
 2. Controller Invoked: data_pipeline_controller.py takes the request and initializes:
    1. Query generation (query_generator.py).
    2. Query strategy selection (query_strategy.py).
+   
 3. Parallel Search Execution
    1. For each query: Job fetcher, news fetcher, and Bing API run in parallel.
    2. This leverages async calls or thread pools for concurrency.
