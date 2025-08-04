@@ -1,7 +1,7 @@
 <h2>Parallel Multi-Source Data Pipeline</h2>
 
 <h4>
-This project implements a robust data pipeline for parallel retrieval, deduplication, and ranking of research data across multiple sources (job boards, news sites, search engines). The pipeline uses asynchronous fetching, query strategy management, scoring, and circuit breaker integration points for reliability.
+This project implements a robust data pipeline for parallel retrieval, deduplication, and ranking of research data across multiple sources (job boards, news sites, search engines). The pipeline uses asynchronous fetching, query strategy management, and  scoring integration points for reliability.
 </h4>
 
 
